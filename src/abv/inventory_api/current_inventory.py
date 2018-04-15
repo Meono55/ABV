@@ -1,13 +1,14 @@
 from abv.inventory_api.style_db import StyleDB
 from abv.inventory_api.beer import Beer
 from abv.most_recent_file import MostRecentFile
+from abv.file_location import FileLocation
 
 
 class Inventory:
     def __init__(self):
         self.inventory = []
 
-        tanczos_inventory = MostRecentFile()
+        tanczos_inventory = MostRecentFile(FileLocation)
         style_db = StyleDB()
 
         for beer in tanczos_inventory:
