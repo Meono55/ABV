@@ -1,5 +1,6 @@
 from abv.inventory_api.style_db import StyleDB
 from abv.inventory_api.beer import Beer
+from abv.most_recent_file import MostRecentFile
 
 
 class Inventory:
