@@ -3,6 +3,7 @@ from abv.inventory_api.inventory import Inventory
 from abv.inventory_api.inventory_queries import InventoryQueries
 from abv.inventory_api.filter_ds import FilterDS
 import json
+
 app = Flask(__name__)
 
 inventory = None#Inventory("../../../tests/sample_csv_files/three.csv")
